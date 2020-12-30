@@ -6,4 +6,5 @@ resource "tls_private_key" "key_pair" {
 resource "aws_key_pair" "key" {
   key_name   = var.key_name
   public_key = var.public_key == "" ? tls_private_key.key_pair[0].public_key_openssh : var.public_key
+  tags       = var.common_tags
 }
