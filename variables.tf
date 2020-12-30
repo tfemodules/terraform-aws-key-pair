@@ -5,6 +5,6 @@ variable "key_name" {
 
 variable "public_key" {
   type        = string
-  description = "Public key to use for the AWS key pair createion. If not provided a new TLS public/private key pair will be generated."
+  description = "Public key to use for the AWS key pair creation. If not provided a new TLS public/private key pair will be generated."
   default     = ""
 }
