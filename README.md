@@ -26,6 +26,7 @@ The available input variables for the module are described in the table below.
 | -------- | ---- | ------- | ----------- |
 | key_name | `string` | | Name of the AWS key pair to be created. |
 | public_key | `string` | `""` | Public key to use for the AWS key pair creation. If not provided a new TLS public/private key pair will be generated. |
+| common_tags | `map(string)` | `{}` | Tags to apply to all resources. |
 
 ## Outputs
 
