@@ -37,3 +37,18 @@ The outputs defined for the module are described in the table below.
 | key_pair_name | `string` | Name of the created AWS key pair. |
 | private_key | `string` | The private key when the key pair was created by terraform. |
 | public_key | `string` | The public key. |
+
+## Example Module Declaration
+
+An example of how the module can be used to create a new key pair.
+
+```
+module "key_pair" {
+  source = "git::https://github.com/tfemodules/terraform-aws-key-pair.git"
+
+  key_name    = "my-aws-key-pair"
+  common_tags = {
+      project = "my-project"
+  }
+}
+```
